@@ -1,0 +1,101 @@
+@media (max-width: 700px) {
+    body {
+        background-color: whitesmoke;
+    }
+}
+
+header {
+    text-align: center;
+    text-decoration: underline;
+    position: static;
+}
+
+h1 {
+    /* Dark brown for heading at top of page */
+    color: #462020;
+    margin: auto;
+}
+
+h2 {
+    /* Red for section titles */
+    color: rgb(211, 12, 12);    
+    font-family: "Roboto Condensed", "sans-serif";
+}
+
+h3 {
+    /* Dark blue for subsection titles */
+    color: rgb(21, 45, 180);
+    padding: 1vh 1vw 0.3vh 0.1vw;
+    font-family: "Roboto Condensed", "sans-serif";
+}
+
+.flex-container {
+    display: flex;
+    background-color: aliceblue;
+    width: 100px;
+    height: 180px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    background-color: aliceblue;
+    width: 150px;
+    justify-items: center;
+    grid-template-columns: 2fr 2fr 2fr;
+    row-gap: 10px;
+}
+
+section {
+    margin-top: 1vh;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    position: relative;
+    left: 1px;
+}
+
+section:active {
+    color: brown;
+}
+
+img {
+    height: 50vh;
+    max-height: 500px;
+    margin: 1vh 1vw 1vh 0;
+}
+
+video {
+    width: 40vw;
+    max-width: 700px;
+    display: block;
+}
+
+audio {
+    width: 40vmin;
+
+    /* Creates curved green box around audio player */
+    padding-top: 1vh;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
+    padding-left: 0.1vw;
+    border-style: solid;
+    border-color: rgb(39, 209, 152);
+    border-width: 1.5mm;
+    border-radius: 10%;
+}
+
+form {
+    width: 390px;
+    display: inline-block;
+}
+
+select {
+    width: 0.7in;
+}
+
+button:hover {
+    color: red;
+}
