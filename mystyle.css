@@ -16,8 +16,12 @@ header {
     margin: auto;
 }
 
-*#subtitle {
+#subtitle {
     margin: auto;
+}
+
+* {
+    opacity: 1;
 }
 
 [alt] {
