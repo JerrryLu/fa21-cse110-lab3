@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     body {
         background-color: whitesmoke;
     }
@@ -10,26 +10,37 @@ header {
     position: static;
 }
 
-h1 {
+#title {
     /* Dark brown for heading at top of page */
     color: #462020;
     margin: auto;
 }
 
+*#subtitle {
+    margin: auto;
+}
+
+[alt] {
+    height: 50vh;
+}
+
 h2 {
     /* Red for section titles */
     color: rgb(211, 12, 12);    
-    font-family: "Roboto Condensed", "sans-serif";
 }
 
 h3 {
     /* Dark blue for subsection titles */
     color: rgb(21, 45, 180);
     padding: 1vh 1vw 0.3vh 0.1vw;
+}
+
+h2,h3 {
     font-family: "Roboto Condensed", "sans-serif";
 }
 
 .flex-container {
+    /* Creates a flex display that is column based */
     display: flex;
     background-color: aliceblue;
     width: 100px;
@@ -40,11 +51,15 @@ h3 {
 }
 
 .grid-container {
+    /* Creates a 3x3 grid */
     display: grid;
     background-color: aliceblue;
     width: 150px;
     justify-items: center;
     grid-template-columns: 2fr 2fr 2fr;
+}
+
+div.grid-container {
     row-gap: 10px;
 }
 
@@ -61,8 +76,23 @@ section:active {
     color: brown;
 }
 
+div p {
+    font-family: "Roboto Condensed", "sans-serif";
+}
+
+header > h2 {
+    max-width: 1000px
+}
+
+div ~ footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+video + h2 {
+    max-width: 1000px;
+}
+
 img {
-    height: 50vh;
     max-height: 500px;
     margin: 1vh 1vw 1vh 0;
 }
@@ -93,7 +123,7 @@ form {
 }
 
 select {
-    width: 0.7in;
+    min-width: 0.7in;
 }
 
 button:hover {
